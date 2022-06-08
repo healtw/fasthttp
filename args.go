@@ -44,7 +44,7 @@ var argsPool = &sync.Pool{
 //
 // Args instance MUST NOT be used from concurrently running goroutines.
 type Args struct {
-	noCopy noCopy //nolint:unused,structcheck
+	noCopy noCopy //nolint:unused,structcheck 
 
 	args []argsKV
 	buf  []byte
